@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: rgb(212, 211, 211);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+}
+
+header {
+  min-height: 80px;
+  min-width: 100vw;
+  top: 0;
+  padding-right: 30px;
+  background-color: rgba(151, 153, 155, 0.425);
+  box-shadow: 0px -2px 7px 8px rgba(172, 165, 165, 0.925);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+header h1 {
+  padding-left: 2rem;
+  padding-right: 30rem;
+  font-size: 3.5rem;
+  color: white;
+}
+header img {
+  margin-right: 16rem;
+  margin-left: 9rem;
+  width: 70px;
+}
+header a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  padding: 1.5rem;
+  color: black;
+}
+header a:hover {
+  color: rgba(255, 255, 255, 0.664);
+}
+
+main {
+  min-height: 170vh;
+  min-width: 83vw;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  background-color: rgb(212, 211, 211);
+  box-shadow: 0px 5px 20px 5px rgb(192, 191, 191);
+}
+
+footer {
+  min-height: 10vh;
+  max-height: 23vh;
+  min-width: 100vw;
+  bottom: 0;
+}/*# sourceMappingURL=Global-Style.css.map */

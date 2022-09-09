@@ -1,0 +1,322 @@
+main{
+
+.weather {
+    min-height: 12vh;
+    max-height: 50vh;
+    min-width: 70vw;
+    padding: 60px;
+    box-shadow: inset 1px -1px 20px 5px rgb(192, 191, 191);
+    gap: 10px;
+    
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color:white;
+      font-size: 5rem;
+      padding-top: 1px;
+    }
+    h4 {
+      text-align: center;
+      font-size: 2rem;
+      color:rgba(94, 91, 91, 0.692);
+    }
+    .weatherWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      
+      .WeatherBox {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        box-shadow: 1px 0px 20px 5px silver;
+        background-color:  rgba(129, 126, 126, 0.13);
+        p{
+          padding-top: 3rem;
+          font-size: 1.2rem;
+          text-align: center;
+          color: rgba(131, 129, 129, 0.884);
+        }
+        h3{
+          padding-top: 3rem;
+          font-size: 1.2rem;
+          text-align: center;
+          color: rgb(129, 123, 123);
+        }
+      }
+      .BoxWeather {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        box-shadow: 1px 0px 20px 5px silver;
+        background-color:  rgba(129, 126, 126, 0.13);
+        p{
+          padding-top: 3rem;
+          font-size: 1.2rem;
+          text-align: center;
+          color: rgba(131, 129, 129, 0.884);
+        }
+        h3{
+          padding-top: 1.8rem;
+          font-size: 1.2rem;
+          text-align: center;
+          color: rgb(129, 123, 123);
+        }
+      }
+    }
+  }
+  .HotBox{
+    min-width: 23vw;
+    height: 77vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color:  rgba(155, 154, 154, 0.199);
+    .HotEvents{
+        min-width: 23vw;
+        max-width: 77vw;
+        height: 150px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 30px;
+        position: relative;
+        background-color:rgba(194, 189, 189, 0.548);
+        .Event-First,
+        .Event-Second,
+        .Event-Third{
+          width: 350px;
+          color: rgba(131, 129, 129, 0.884);
+          background-color: rgba(129, 126, 126, 0.13);
+          border: 1px solid white;
+          border-radius: 30px;
+          span,h3,p,a{
+            display: none;
+          }
+          h2{
+            font-size: 2.6rem;
+            margin-top: 55px;
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+          }
+          
+        }
+        .Event-First:hover{
+          background-image: url(../IMG/Przykład/Nirvana.jfif);
+          background-position:center;
+          background-size: contain;
+          background-blend-mode:unset;
+        }
+        .Event-Second:hover{
+          background-image: url(../IMG/Przykład/targi.jpg);
+          background-position:center;
+          background-size: contain;
+          background-blend-mode: overlay;
+        }
+        .Event-Third:hover{
+            background-image: url(../IMG/Przykład/yass\ festival.jpeg);
+            background-position:center;
+            background-size: cover;
+            background-blend-mode: overlay;
+          }
+          .Event-First:hover,
+          .Event-Second:hover,
+          .Event-Third:hover{
+            background-color:rgb(189, 187, 187);
+            color: black;
+            min-width: 23vw;
+            max-width: 77vw;
+            min-height: 210px;
+            bottom: 30px;
+            border: 1px solid white;
+            border-radius: 30px;
+            position: relative;
+            z-index: 5;
+            span,h3,h2,p,a{
+              font-size: 16px;
+              padding: 5px;
+              color: white;
+              display: flex;
+              justify-content: space-between;
+              
+            }
+            h2{
+              font-size: 2.4rem;
+              margin: 15px;
+              color: white;
+            }
+            a{
+              text-decoration: none;
+              color: white;
+            }
+          }   
+    }
+    .HotAttractions{
+        min-width: 23vw;
+        max-width: 77vw;
+        height: 150px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30px;
+        position: relative;
+        background-color:rgba(194, 189, 189, 0.548);
+        .Attractions-First,
+        .Attractions-Second,
+        .Attractions-Third{
+          width: 350px;
+          color: rgba(131, 129, 129, 0.884);
+          background-color: rgba(129, 126, 126, 0.13);
+          border: 1px solid white;
+          border-radius: 30px;
+          span,h3,h2,p,a{
+            display: none;
+          }
+          h2{
+            font-size: 26px;
+            margin-top: 55px;
+            display: flex;
+            justify-content: center;
+            
+          }
+        }
+        .Attractions-First:hover{
+          background-image: url(../IMG/Przykład/Legendia.jpg);
+          background-position:center;
+          background-size: cover;
+        }
+        .Attractions-Second:hover{
+          background-image: url(../IMG/Przykład/Kopalnia\ Guido.jfif);
+          background-position:center;
+          background-size: cover;
+        }
+        .Attractions-Third:hover{
+          background-image: url(../IMG/Przykład/Planetarium.jfif);
+          background-position:center;
+          background-size: cover;
+        }
+        .Attractions-First:hover,
+        .Attractions-Second:hover,
+        .Attractions-Third:hover{
+            background-color:rgb(189, 187, 187);
+            color: black;
+            min-width: 23vw;
+            max-width: 77vw;
+            height: 210px;
+            bottom: 30px;
+            border: 1px solid white;
+            border-radius: 30px;
+            position: relative;
+            z-index: 5;
+            span,h3,h2,p,a{
+              font-size: 12px;
+              margin-left: 10px;
+              color: white;
+              display: flex;
+            }
+            h2{
+              text-align: center;
+              font-size: 2.4rem;
+              color: white;
+            }
+            a{
+              margin-top: 10px;
+              text-decoration: none;
+              color: white;
+            }
+          }
+      }
+      .HotTransport{
+        min-width: 23vw;
+        max-width: 77vw;
+        height: 150px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 30px;
+        position: relative;
+        background-color:rgba(194, 189, 189, 0.548);
+        .Transport-First,
+        .Transport-Second,
+        .Transport-Third{
+          width: 350px;
+          color: rgba(131, 129, 129, 0.884);
+          background-color: rgba(129, 126, 126, 0.13);
+          border: 1px solid white;
+          border-radius: 30px;
+          span,h3,p,a{
+            display: none;
+          }
+          h2{
+            font-size: 26px;
+            margin-top: 55px;
+            display: flex;
+            justify-content: center;
+            
+          }
+        }
+        .Transport-First:hover{
+          background-image: url(../IMG/Przykład/Taxi.jfif);
+          background-position:center;
+          background-size: cover;
+        }
+        .Transport-First:hover,
+        .Transport-Second:hover,
+        .Transport-Third:hover{
+            background-color:rgb(189, 187, 187);
+            color: black;
+            min-width: 23vw;
+            max-width: 77vw;
+            height: 210px;
+            bottom: 30px;
+            border: 1px solid white;
+            border-radius: 30px;
+            position: relative;
+            z-index: 5;
+            background-image: url(../IMG/Przykład/Taxi.jfif);
+            background-position:center;
+            background-size: cover;
+            background-blend-mode: overlay;
+            
+            
+            span,h3,h2,p,a{
+              font-size: 12px;
+              margin-top: 0;
+              color: white;
+              display: flex;
+              justify-content: center;
+            }
+            h2{
+              text-align: center;
+              font-size: 2.4rem;
+              color: white;
+            }
+            a{
+              margin-top: 10px;
+              text-decoration: none;
+              color: rgb(230, 222, 222);
+            }
+            p{
+              color: orange;
+            }
+            
+          }
+      }
+    }
+  .Box{
+    min-width: 68vw;
+    height: 80vh;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color:  rgba(155, 154, 154, 0.199);
+    z-index: 100;
+  }
+}

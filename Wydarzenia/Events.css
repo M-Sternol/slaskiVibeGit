@@ -1,0 +1,125 @@
+main {
+  margin-top: 0;
+}
+main .EventBox {
+  min-width: 23vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(155, 154, 154, 0.199);
+}
+main .EventBox .Events {
+  min-width: 23vw;
+  max-width: 77vw;
+  height: 150px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  position: relative;
+  background-color: rgba(194, 189, 189, 0.548);
+}
+main .EventBox .Events .Event-First,
+main .EventBox .Events .Event-Second,
+main .EventBox .Events .Event-Third {
+  width: 350px;
+  color: rgba(131, 129, 129, 0.884);
+  background-color: rgba(129, 126, 126, 0.13);
+  border: 1px solid white;
+  border-radius: 30px;
+}
+main .EventBox .Events .Event-First span, main .EventBox .Events .Event-First h3, main .EventBox .Events .Event-First p, main .EventBox .Events .Event-First a,
+main .EventBox .Events .Event-Second span,
+main .EventBox .Events .Event-Second h3,
+main .EventBox .Events .Event-Second p,
+main .EventBox .Events .Event-Second a,
+main .EventBox .Events .Event-Third span,
+main .EventBox .Events .Event-Third h3,
+main .EventBox .Events .Event-Third p,
+main .EventBox .Events .Event-Third a {
+  display: none;
+}
+main .EventBox .Events .Event-First h2,
+main .EventBox .Events .Event-Second h2,
+main .EventBox .Events .Event-Third h2 {
+  font-size: 1.2vw;
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+main .EventBox .Events .Event-First .EventDate,
+main .EventBox .Events .Event-Second .EventDate,
+main .EventBox .Events .Event-Third .EventDate {
+  width: 6vw;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: static;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.281);
+  float: left;
+}
+main .EventBox .Events .Event-First .EventDate h3, main .EventBox .Events .Event-First .EventDate span,
+main .EventBox .Events .Event-Second .EventDate h3,
+main .EventBox .Events .Event-Second .EventDate span,
+main .EventBox .Events .Event-Third .EventDate h3,
+main .EventBox .Events .Event-Third .EventDate span {
+  display: flex;
+  flex-direction: column;
+  color: rgb(82, 79, 79);
+}
+main .EventBox .Events .Event-First:hover,
+main .EventBox .Events .Event-Second:hover,
+main .EventBox .Events .Event-Third:hover {
+  background-color: rgb(189, 187, 187);
+  color: black;
+  width: 100%;
+  max-width: 77vw;
+  min-height: 41vh;
+  border: 1px solid white;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 1;
+}
+main .EventBox .Events .Event-First:hover span, main .EventBox .Events .Event-First:hover h3, main .EventBox .Events .Event-First:hover h2, main .EventBox .Events .Event-First:hover p, main .EventBox .Events .Event-First:hover a,
+main .EventBox .Events .Event-Second:hover span,
+main .EventBox .Events .Event-Second:hover h3,
+main .EventBox .Events .Event-Second:hover h2,
+main .EventBox .Events .Event-Second:hover p,
+main .EventBox .Events .Event-Second:hover a,
+main .EventBox .Events .Event-Third:hover span,
+main .EventBox .Events .Event-Third:hover h3,
+main .EventBox .Events .Event-Third:hover h2,
+main .EventBox .Events .Event-Third:hover p,
+main .EventBox .Events .Event-Third:hover a {
+  font-size: 16px;
+  padding: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+main .EventBox .Events .Event-First:hover .EventDate,
+main .EventBox .Events .Event-Second:hover .EventDate,
+main .EventBox .Events .Event-Third:hover .EventDate {
+  display: none;
+}
+main .EventBox .Events .Event-First:hover h2,
+main .EventBox .Events .Event-Second:hover h2,
+main .EventBox .Events .Event-Third:hover h2 {
+  font-size: 3.4rem;
+  margin: 15px;
+  color: white;
+}
+main .EventBox .Events .Event-First:hover a,
+main .EventBox .Events .Event-Second:hover a,
+main .EventBox .Events .Event-Third:hover a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=Events.css.map */

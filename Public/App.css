@@ -1,0 +1,387 @@
+@charset "UTF-8";
+main .weather {
+  min-height: 12vh;
+  max-height: 50vh;
+  min-width: 70vw;
+  padding: 60px;
+  box-shadow: inset 1px -1px 20px 5px rgb(192, 191, 191);
+  gap: 10px;
+}
+main .weather h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 5rem;
+  padding-top: 1px;
+}
+main .weather h4 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(94, 91, 91, 0.692);
+}
+main .weather .weatherWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main .weather .weatherWrapper .WeatherBox {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  box-shadow: 1px 0px 20px 5px silver;
+  background-color: rgba(129, 126, 126, 0.13);
+}
+main .weather .weatherWrapper .WeatherBox p {
+  padding-top: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgba(131, 129, 129, 0.884);
+}
+main .weather .weatherWrapper .WeatherBox h3 {
+  padding-top: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(129, 123, 123);
+}
+main .weather .weatherWrapper .BoxWeather {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  box-shadow: 1px 0px 20px 5px silver;
+  background-color: rgba(129, 126, 126, 0.13);
+}
+main .weather .weatherWrapper .BoxWeather p {
+  padding-top: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgba(131, 129, 129, 0.884);
+}
+main .weather .weatherWrapper .BoxWeather h3 {
+  padding-top: 1.8rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(129, 123, 123);
+}
+main .HotBox {
+  min-width: 23vw;
+  height: 77vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: rgba(155, 154, 154, 0.199);
+}
+main .HotBox .HotEvents {
+  min-width: 23vw;
+  max-width: 77vw;
+  height: 150px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  position: relative;
+  background-color: rgba(194, 189, 189, 0.548);
+}
+main .HotBox .HotEvents .Event-First,
+main .HotBox .HotEvents .Event-Second,
+main .HotBox .HotEvents .Event-Third {
+  width: 350px;
+  color: rgba(131, 129, 129, 0.884);
+  background-color: rgba(129, 126, 126, 0.13);
+  border: 1px solid white;
+  border-radius: 30px;
+}
+main .HotBox .HotEvents .Event-First span, main .HotBox .HotEvents .Event-First h3, main .HotBox .HotEvents .Event-First p, main .HotBox .HotEvents .Event-First a,
+main .HotBox .HotEvents .Event-Second span,
+main .HotBox .HotEvents .Event-Second h3,
+main .HotBox .HotEvents .Event-Second p,
+main .HotBox .HotEvents .Event-Second a,
+main .HotBox .HotEvents .Event-Third span,
+main .HotBox .HotEvents .Event-Third h3,
+main .HotBox .HotEvents .Event-Third p,
+main .HotBox .HotEvents .Event-Third a {
+  display: none;
+}
+main .HotBox .HotEvents .Event-First h2,
+main .HotBox .HotEvents .Event-Second h2,
+main .HotBox .HotEvents .Event-Third h2 {
+  font-size: 2.6rem;
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+main .HotBox .HotEvents .Event-First:hover {
+  background-image: url(../IMG/Przykład/Nirvana.jfif);
+  background-position: center;
+  background-size: contain;
+  background-blend-mode: unset;
+}
+main .HotBox .HotEvents .Event-Second:hover {
+  background-image: url(../IMG/Przykład/targi.jpg);
+  background-position: center;
+  background-size: contain;
+  background-blend-mode: overlay;
+}
+main .HotBox .HotEvents .Event-Third:hover {
+  background-image: url(../IMG/Przykład/yass\ festival.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+main .HotBox .HotEvents .Event-First:hover,
+main .HotBox .HotEvents .Event-Second:hover,
+main .HotBox .HotEvents .Event-Third:hover {
+  background-color: rgb(189, 187, 187);
+  color: black;
+  min-width: 23vw;
+  max-width: 77vw;
+  min-height: 210px;
+  bottom: 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+  position: relative;
+  z-index: 5;
+}
+main .HotBox .HotEvents .Event-First:hover span, main .HotBox .HotEvents .Event-First:hover h3, main .HotBox .HotEvents .Event-First:hover h2, main .HotBox .HotEvents .Event-First:hover p, main .HotBox .HotEvents .Event-First:hover a,
+main .HotBox .HotEvents .Event-Second:hover span,
+main .HotBox .HotEvents .Event-Second:hover h3,
+main .HotBox .HotEvents .Event-Second:hover h2,
+main .HotBox .HotEvents .Event-Second:hover p,
+main .HotBox .HotEvents .Event-Second:hover a,
+main .HotBox .HotEvents .Event-Third:hover span,
+main .HotBox .HotEvents .Event-Third:hover h3,
+main .HotBox .HotEvents .Event-Third:hover h2,
+main .HotBox .HotEvents .Event-Third:hover p,
+main .HotBox .HotEvents .Event-Third:hover a {
+  font-size: 16px;
+  padding: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+main .HotBox .HotEvents .Event-First:hover h2,
+main .HotBox .HotEvents .Event-Second:hover h2,
+main .HotBox .HotEvents .Event-Third:hover h2 {
+  font-size: 2.4rem;
+  margin: 15px;
+  color: white;
+}
+main .HotBox .HotEvents .Event-First:hover a,
+main .HotBox .HotEvents .Event-Second:hover a,
+main .HotBox .HotEvents .Event-Third:hover a {
+  text-decoration: none;
+  color: white;
+}
+main .HotBox .HotAttractions {
+  min-width: 23vw;
+  max-width: 77vw;
+  height: 150px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  position: relative;
+  background-color: rgba(194, 189, 189, 0.548);
+}
+main .HotBox .HotAttractions .Attractions-First,
+main .HotBox .HotAttractions .Attractions-Second,
+main .HotBox .HotAttractions .Attractions-Third {
+  width: 350px;
+  color: rgba(131, 129, 129, 0.884);
+  background-color: rgba(129, 126, 126, 0.13);
+  border: 1px solid white;
+  border-radius: 30px;
+}
+main .HotBox .HotAttractions .Attractions-First span, main .HotBox .HotAttractions .Attractions-First h3, main .HotBox .HotAttractions .Attractions-First h2, main .HotBox .HotAttractions .Attractions-First p, main .HotBox .HotAttractions .Attractions-First a,
+main .HotBox .HotAttractions .Attractions-Second span,
+main .HotBox .HotAttractions .Attractions-Second h3,
+main .HotBox .HotAttractions .Attractions-Second h2,
+main .HotBox .HotAttractions .Attractions-Second p,
+main .HotBox .HotAttractions .Attractions-Second a,
+main .HotBox .HotAttractions .Attractions-Third span,
+main .HotBox .HotAttractions .Attractions-Third h3,
+main .HotBox .HotAttractions .Attractions-Third h2,
+main .HotBox .HotAttractions .Attractions-Third p,
+main .HotBox .HotAttractions .Attractions-Third a {
+  display: none;
+}
+main .HotBox .HotAttractions .Attractions-First h2,
+main .HotBox .HotAttractions .Attractions-Second h2,
+main .HotBox .HotAttractions .Attractions-Third h2 {
+  font-size: 26px;
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+main .HotBox .HotAttractions .Attractions-First:hover {
+  background-image: url(../IMG/Przykład/Legendia.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main .HotBox .HotAttractions .Attractions-Second:hover {
+  background-image: url(../IMG/Przykład/Kopalnia\ Guido.jfif);
+  background-position: center;
+  background-size: cover;
+}
+main .HotBox .HotAttractions .Attractions-Third:hover {
+  background-image: url(../IMG/Przykład/Planetarium.jfif);
+  background-position: center;
+  background-size: cover;
+}
+main .HotBox .HotAttractions .Attractions-First:hover,
+main .HotBox .HotAttractions .Attractions-Second:hover,
+main .HotBox .HotAttractions .Attractions-Third:hover {
+  background-color: rgb(189, 187, 187);
+  color: black;
+  min-width: 23vw;
+  max-width: 77vw;
+  height: 210px;
+  bottom: 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+  position: relative;
+  z-index: 5;
+}
+main .HotBox .HotAttractions .Attractions-First:hover span, main .HotBox .HotAttractions .Attractions-First:hover h3, main .HotBox .HotAttractions .Attractions-First:hover h2, main .HotBox .HotAttractions .Attractions-First:hover p, main .HotBox .HotAttractions .Attractions-First:hover a,
+main .HotBox .HotAttractions .Attractions-Second:hover span,
+main .HotBox .HotAttractions .Attractions-Second:hover h3,
+main .HotBox .HotAttractions .Attractions-Second:hover h2,
+main .HotBox .HotAttractions .Attractions-Second:hover p,
+main .HotBox .HotAttractions .Attractions-Second:hover a,
+main .HotBox .HotAttractions .Attractions-Third:hover span,
+main .HotBox .HotAttractions .Attractions-Third:hover h3,
+main .HotBox .HotAttractions .Attractions-Third:hover h2,
+main .HotBox .HotAttractions .Attractions-Third:hover p,
+main .HotBox .HotAttractions .Attractions-Third:hover a {
+  font-size: 12px;
+  margin-left: 10px;
+  color: white;
+  display: flex;
+}
+main .HotBox .HotAttractions .Attractions-First:hover h2,
+main .HotBox .HotAttractions .Attractions-Second:hover h2,
+main .HotBox .HotAttractions .Attractions-Third:hover h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: white;
+}
+main .HotBox .HotAttractions .Attractions-First:hover a,
+main .HotBox .HotAttractions .Attractions-Second:hover a,
+main .HotBox .HotAttractions .Attractions-Third:hover a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+main .HotBox .HotTransport {
+  min-width: 23vw;
+  max-width: 77vw;
+  height: 150px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+  position: relative;
+  background-color: rgba(194, 189, 189, 0.548);
+}
+main .HotBox .HotTransport .Transport-First,
+main .HotBox .HotTransport .Transport-Second,
+main .HotBox .HotTransport .Transport-Third {
+  width: 350px;
+  color: rgba(131, 129, 129, 0.884);
+  background-color: rgba(129, 126, 126, 0.13);
+  border: 1px solid white;
+  border-radius: 30px;
+}
+main .HotBox .HotTransport .Transport-First span, main .HotBox .HotTransport .Transport-First h3, main .HotBox .HotTransport .Transport-First p, main .HotBox .HotTransport .Transport-First a,
+main .HotBox .HotTransport .Transport-Second span,
+main .HotBox .HotTransport .Transport-Second h3,
+main .HotBox .HotTransport .Transport-Second p,
+main .HotBox .HotTransport .Transport-Second a,
+main .HotBox .HotTransport .Transport-Third span,
+main .HotBox .HotTransport .Transport-Third h3,
+main .HotBox .HotTransport .Transport-Third p,
+main .HotBox .HotTransport .Transport-Third a {
+  display: none;
+}
+main .HotBox .HotTransport .Transport-First h2,
+main .HotBox .HotTransport .Transport-Second h2,
+main .HotBox .HotTransport .Transport-Third h2 {
+  font-size: 26px;
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+}
+main .HotBox .HotTransport .Transport-First:hover {
+  background-image: url(../IMG/Przykład/Taxi.jfif);
+  background-position: center;
+  background-size: cover;
+}
+main .HotBox .HotTransport .Transport-First:hover,
+main .HotBox .HotTransport .Transport-Second:hover,
+main .HotBox .HotTransport .Transport-Third:hover {
+  background-color: rgb(189, 187, 187);
+  color: black;
+  min-width: 23vw;
+  max-width: 77vw;
+  height: 210px;
+  bottom: 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+  position: relative;
+  z-index: 5;
+  background-image: url(../IMG/Przykład/Taxi.jfif);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+main .HotBox .HotTransport .Transport-First:hover span, main .HotBox .HotTransport .Transport-First:hover h3, main .HotBox .HotTransport .Transport-First:hover h2, main .HotBox .HotTransport .Transport-First:hover p, main .HotBox .HotTransport .Transport-First:hover a,
+main .HotBox .HotTransport .Transport-Second:hover span,
+main .HotBox .HotTransport .Transport-Second:hover h3,
+main .HotBox .HotTransport .Transport-Second:hover h2,
+main .HotBox .HotTransport .Transport-Second:hover p,
+main .HotBox .HotTransport .Transport-Second:hover a,
+main .HotBox .HotTransport .Transport-Third:hover span,
+main .HotBox .HotTransport .Transport-Third:hover h3,
+main .HotBox .HotTransport .Transport-Third:hover h2,
+main .HotBox .HotTransport .Transport-Third:hover p,
+main .HotBox .HotTransport .Transport-Third:hover a {
+  font-size: 12px;
+  margin-top: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+main .HotBox .HotTransport .Transport-First:hover h2,
+main .HotBox .HotTransport .Transport-Second:hover h2,
+main .HotBox .HotTransport .Transport-Third:hover h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: white;
+}
+main .HotBox .HotTransport .Transport-First:hover a,
+main .HotBox .HotTransport .Transport-Second:hover a,
+main .HotBox .HotTransport .Transport-Third:hover a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(230, 222, 222);
+}
+main .HotBox .HotTransport .Transport-First:hover p,
+main .HotBox .HotTransport .Transport-Second:hover p,
+main .HotBox .HotTransport .Transport-Third:hover p {
+  color: orange;
+}
+main .Box {
+  min-width: 68vw;
+  height: 80vh;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: rgba(155, 154, 154, 0.199);
+  z-index: 100;
+}/*# sourceMappingURL=App.css.map */
